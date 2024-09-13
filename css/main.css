@@ -144,7 +144,7 @@ main .container .grid .future h1 {
 }
 
 main .container .grid .dive {
-    padding: 10px;
+    padding: 10px 0;
     color: var(--dark-grayish-blue);
 }
 
@@ -166,6 +166,39 @@ main .container .grid .dive a {
 main .container .grid .dive a:hover {
     color: var(--off-white);
     background-color: var(--very-dark-blue);
+}
+
+main .container .grid .trending-art {
+    display: flex;
+    gap: 25px
+}
+
+main .container .grid .trending-art img {
+    width: 100px;
+}
+
+main .container .grid .trending-art .info h1 {
+    margin: 0;
+    color: var(--soft-red);
+
+}
+
+main .container .grid .trending-art .info h4 {
+    color: var(--very-dark-blue);
+    margin: 10px 0;
+    font-weight: 900;
+    font-size: 18px;
+    transition: var(--main-trans);
+    cursor: pointer;
+}
+
+main .container .grid .trending-art .info h4:hover {
+    color: var(--soft-red);
+}
+
+main .container .grid .trending-art .info p {
+    color: var(--dark-grayish-blue);
+    font-weight: 500;
 }
 /* End Local Rules */
 
@@ -202,6 +235,16 @@ main .container .grid .dive a:hover {
     main .container .grid .new {
         grid-row: 4;
         grid-column: 1;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    main .container .grid .trending-art {
+        grid-column: 1;
+    }
+
+    main .container .grid .trending-art:last-of-type {
+        padding-bottom: 60px;
     }
 }
 /* Container Queries */

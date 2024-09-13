@@ -208,6 +208,8 @@ main .container .grid .trending-art .info p {
     height: 100%;
     width: 60%;
     right: 0;
+
+    transition: var(--main-trans);
 }
 
 .mobile-menu::before {
@@ -236,7 +238,8 @@ main .container .grid .trending-art .info p {
 }
 
 .invisible {
-    display: none;
+    /* display: none; */
+    width: 0;
 }
 /* End Local Rules */
 
